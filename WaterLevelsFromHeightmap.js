@@ -24,6 +24,9 @@
 
 ///////////CODE/////////////
 
+if (parseInt(org.pepsoft.worldpainter.Version.BUILD) <= 20160820173357)
+    throw "Update WorldPainter!";
+
 print('Script by ctRy');
 
 var waterHeight = wp.getHeightMap().fromFile(params["watermap"].getAbsolutePath()).go();
